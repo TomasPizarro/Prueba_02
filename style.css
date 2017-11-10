@@ -1,0 +1,144 @@
+body {
+	margin: 10px 10px 0px 10px;
+}
+
+.top {
+  background: #5c888e;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.logo {
+  background: url(img/logo-personal.png);
+  height: 40px;
+  width: 40px;
+  margin-left: 5%;
+
+}
+
+.note-twitter {
+	background: #88c6ce;
+	padding: 25px;
+	width: 100%;
+	height: 150px;
+	overflow: auto;
+  font-size: 15px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.cruz {
+	height: 30px;
+  width: 30px;
+	float: right;
+	color: #5a7b80;
+  font-size: 18px;
+  margin: 0px 0px 0px 0px;
+  background: url(img/cruz.png);
+  padding-bottom: 20px;
+
+}
+
+.cruz:hover {
+  height: 30px;
+  width: 30px;
+  float: right;
+  color: #5a7b80;
+  font-size: 18px;
+  margin: 0px 0px 0px 0px;
+  background: url(img/cruz-hover.png);
+  padding-bottom: 20px;
+  transition:all 0.2s;
+
+}
+
+
+
+.like {
+  height: 30px;
+  width: 30px;
+  float: right;
+  color: #5a7b80;
+  font-size: 18px;
+  margin: 60px -30px 0px 0px;
+  background: url(img/like.png);
+
+
+}
+
+.like:hover {
+  height: 30px;
+  width: 30px;
+  float: right;
+  color: #5a7b80;
+  font-size: 18px;
+  margin: 60px -30px 0px 0px;
+  background: url(img/like-hover.png);
+  transition:all 0.2s;
+
+
+}
+
+#texto {
+	width: 100%;
+	height: 150px;
+  border-color: white;
+  border-radius: 5px;
+  background: #e8f5f7;
+  color: #76878a;
+  padding: 15px 0px 0px 15px;
+  font-family: sans-serif;
+}
+
+#form {
+  margin-top: 10px;
+}
+
+input {
+  background: #88c5ce;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  border: none;
+  float: right;
+}
+
+input:hover {
+  background: #5c888e;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  border: none;
+  float: right;
+  transition:all 0.2s;
+}
+
+.col-6 {
+  flex:0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex:0 0 50%;
+  max-width: 50%;
+}
+
+#clicks {
+  color: #426d8e;
+  font-weight: 600;
+  margin-left: 6px;
+  font-size: 15px;
+}
+
+#contador {
+  font-size: 10px;
+  color: white;
+  margin-top: 30px;
+  width: 70px;
+  margin-left: 12px;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Estructura Twitter</title>
+  <!--<link rel="stylesheet" type="text/css" href="PRUEBA JS-JQ/style.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="top"><div class="logo"></div></div>
+<div id="content">
+<div class="row">
+ <div class="col-6">
+<form id="form">
+  <textarea id="texto"></textarea>
+  <input type="submit" name="" value"crear twitt">
+</form>
+  </div>
+
+  <div class="col-7">
+   <div class="note-twitter">
+    <div class="cruz">
+    </div>
+    <a href="javascript:clickLink();"><div class="like"><div id="contador"></div><span id="clicks">0</span></p>
+  </div></a>
+    
+    <p>Lorem ipsum dolor sit amet, nec auctor sodales massa a. Venenatis consequat sed ante augue a adipiscing. Urna luctus lacus consectetuer, sed dictum venenatis mauris amet. Augue vivamus.<p>
+   </div>
+
+
+   <script type="text/javascript">
+   var i = 0
+        function clickLink() {
+            i++;
+            if (i == 1) {
+                document.getElementById("clicks").innerHTML = i;
+            }
+            else
+            {
+                document.getElementById("clicks").innerHTML = i;
+            }
+        }
+        function Reset() {
+            i = 0;
+            document.getElementById("clicks").innerHTML = i;
+        }
+
+   $(document).ready(function(){
+    $("#form").on('submit', function(event){
+    var  text = $("#texto").val();
+    event.preventDefault();
+    $(".col-7").append(
+    '<div class="note-twitter">'
+    +'<div class="cruz">'
+    +'</div>'
+    +'<div class="like">'
+    +'</div>'
+    + text
+    +'</div>')
+   });
+    $('#content').on('click', '.cruz', function(){
+    $(this).parent().fadeOut();     
+   })
+})
+
+   </script>
+
+
+  </div>
+
+
+</div>
+</div>
+</body>
+</html>
